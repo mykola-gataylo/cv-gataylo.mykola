@@ -1,0 +1,33 @@
+.experience {
+  .experience__title {
+    @include main-titles;
+  }
+
+  .experience__item {
+    padding: 10px 25px;
+
+    .experience__position {
+      @include main-position;
+    }
+
+    .experience__company {
+      font-size: $fontSizeExperienceCompany;
+      line-height: $lineHeightExperienceCompany;
+      font-weight: 500;
+
+      &.description {
+        margin-bottom: 0.2rem;
+      }
+    }
+
+    .experience__period {
+      font-size: $fontSizeMainPeriod;
+      line-height: $lineHeightMainPeriod;
+
+      .experience__period--linea {
+        color: $bgColorSidebar;
+        font-weight: 900;
+      }
+    }
+  }
+}

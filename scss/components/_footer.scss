@@ -1,0 +1,37 @@
+.footer {
+  width: 100%;
+  height: 110px;
+  padding: 40px 10px;
+  display: flex;
+  justify-content: space-between;
+
+  .rs-logo-container {
+    height: 30px;
+    display: flex;
+    align-items: center;
+
+    .rs-logo-icon {
+      height: 30px;
+    }
+  }
+
+  .footer__text-container {
+    height: 30px;
+    font-size: calc(0.5vw + 10px);
+    line-height: calc(1.1vw + 10px);
+    display: flex;
+    align-items: center;
+  }
+
+  .github-logo-container {
+    height: 30px;
+    display: flex;
+    align-items: center;
+
+    .github-logo-icon {
+      height: 30px;
+    }
+  }
+}
+
+@import '../media/footer-media';

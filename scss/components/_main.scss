@@ -1,0 +1,52 @@
+.main-container {
+  display: flex;
+
+  .main {
+    width: 65%;
+    padding: 10px;
+
+    .name {
+      .name__position {
+        font-size: $fontSizeMainPosition;
+        line-height: $lineHeightMainPosition;
+        text-align: center;
+        margin: 0;
+      }
+
+      .name__title {
+        font-size: $fontSizeMainName;
+        line-height: $lineHeightMainName;
+        text-align: center;
+        font-weight: 700;
+      }
+    }
+
+    .description {
+      .description__description {
+        padding: 15px 25px;
+        font-size: calc(0.5vw + 10px);
+        text-indent: 2em;
+        text-align: justify;
+        line-height: calc(1.825vw + 10px);
+
+        .description__name {
+          @include links;
+          font-size: calc(0.5vw + 10px);
+        }
+
+        .description__link {
+          @include links;
+
+          &:hover {
+            padding: 5px 3px;
+            color: $bgColorSidebar;
+            background: $colorItem;
+            border: 1px solid $bgColorSidebar;
+          }
+        }
+      }
+    }
+  }
+}
+
+@import '../media/main-media';

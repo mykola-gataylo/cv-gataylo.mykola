@@ -1,0 +1,25 @@
+@import './scss/base/base';
+@import './scss/base/variables';
+@import './scss/base/mixins';
+
+@import './scss/components/sidebar';
+@import './scss/components/main';
+@import './scss/components/contacts';
+@import './scss/components/education';
+@import './scss/components/experience';
+@import './scss/components/projects';
+@import './scss/components/footer';
+
+.container-custom {
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  color: $colorMain;
+
+  .icon {
+    fill: $colorIcons;
+    width: 56px;
+    height: 56px;
+  }
+}

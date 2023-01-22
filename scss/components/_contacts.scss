@@ -1,0 +1,29 @@
+.contacts {
+  .contacts__title {
+    @include sidebar-title;
+    margin-top: 10px;
+  }
+
+  .contacts__list {
+    padding-left: 1rem;
+
+    .contacts__list__item {
+      a {
+        display: flex;
+        align-items: center;
+      }
+
+      .contacts__link {
+        margin-left: 5px;
+        font-size: $fontSizeSidebarItems;
+        line-height: $lineHeightSidebarItem;
+        color: $colorItem;
+      }
+    }
+
+    .icon:hover {
+      fill: $colorIcons;
+      cursor: pointer;
+    }
+  }
+}

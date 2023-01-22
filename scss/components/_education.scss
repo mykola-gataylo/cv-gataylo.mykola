@@ -1,0 +1,52 @@
+.education {
+  .education__title {
+    @include main-titles;
+  }
+
+  .education__item {
+    padding: 10px 25px;
+
+    .education__position {
+      @include main-position;
+    }
+
+    .education__company-container {
+      .education__company {
+        font-size: $fontSizeExperienceCompany;
+        line-height: $lineHeightExperienceCompany;
+        font-weight: 500;
+
+        &.description {
+          margin-bottom: 0.2em;
+        }
+
+        .link {
+          @include links;
+
+          &:hover {
+            padding: 5px 3px;
+            color: $bgColorSidebar;
+            background: $colorItem;
+            border: 1px solid $bgColorSidebar;
+          }
+        }
+
+        &.faculty {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .certificate__link {
+      width: fit-content;
+      display: block;
+      @include main-position;
+      margin-bottom: 0.2rem;
+    }
+
+    .education__period {
+      font-size: $fontSizeMainPeriod;
+      line-height: $lineHeightMainPeriod;
+    }
+  }
+}

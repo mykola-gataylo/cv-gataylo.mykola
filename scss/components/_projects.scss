@@ -1,0 +1,31 @@
+.projects {
+  .projects__title {
+    @include main-titles;
+  }
+
+  .projects__item-container {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .projects__link {
+      width: fit-content;
+      display: block;
+      text-align: center;
+      @include main-position;
+
+      img {
+        width: 180px;
+        height: 120px;
+      }
+
+      &:hover {
+        padding: 3px 0;
+        color: $colorSidebar;
+        background-color: $bgColorSidebar;
+        cursor: pointer;
+      }
+    }
+  }
+}

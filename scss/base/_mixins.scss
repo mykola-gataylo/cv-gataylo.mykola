@@ -1,0 +1,43 @@
+@mixin main-titles {
+  padding: 3px;
+  color: $colorItem;
+  font-size: $fontSizeSidebarTitle;
+  line-height: $lineHeightSidebarTitle;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $bgColorMainTitles;
+}
+
+@mixin sidebar-title {
+  padding: 3px;
+  background-color: $bgColorSidebarTitles;
+  color: $colorSidebarTitle;
+  font-size: $fontSizeSidebarTitle;
+  line-height: $lineHeightSidebarTitle;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@mixin sidebar-skills-items {
+  font-size: $fontSizeSidebarItems;
+  line-height: $lineHeightSidebarItem;
+  color: $colorItem;
+  display: block;
+  align-self: center;
+  margin-left: 5px;
+}
+
+@mixin links {
+  padding: 3px;
+  font-size: calc(0.4vw + 10px);
+  line-height: calc(1.6vw + 10px);
+  font-weight: 500;
+  color: #fcfcfa;
+  background-color: #002c54;
+}
+
+@mixin main-position {
+  font-size: $fontSizeExperiencePosition;
+  line-height: $lineHeightExperiencePosition;
+  margin: 0;
+}
