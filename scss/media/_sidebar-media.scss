@@ -1,0 +1,95 @@
+@media (min-width: 320px) and (max-width: 576px) {
+  .container-custom {
+    padding: 0;
+
+    .sidebar {
+      width: 50%;
+
+      .icon {
+        width: 32px;
+        height: 32px;
+      }
+
+      .contacts div {
+        .contacts__list {
+          padding-left: 0;
+          display: flex;
+          justify-content: center;
+
+          .contacts__link {
+            display: none;
+          }
+        }
+      }
+
+      .tech-skills div {
+        .tech-skills__list {
+          padding-left: 0.5rem;
+        }
+      }
+
+      .soft-skills div {
+        .soft-skills__list {
+          padding-left: 0.5rem;
+        }
+      }
+
+      .languages div {
+        .languages__list {
+          padding-left: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576.98px) and (max-width: 768px) {
+  .container-custom {
+    .sidebar {
+      width: 50%;
+
+      .icon {
+        width: 32px;
+        height: 32px;
+      }
+
+      .contacts div {
+        .contacts__list {
+          padding-left: 0;
+
+          .contacts__link {
+            &.contacts__link-mail {
+              font-size: calc(0.55vw + 8.9px);
+            }
+          }
+        }
+      }
+
+      .tech-skills div {
+        .tech-skills__list {
+          padding-left: 0;
+        }
+      }
+
+      .soft-skills div {
+        .soft-skills__list {
+          padding-left: 0;
+        }
+      }
+
+      .languages div {
+        .languages__list {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768.98px) and (max-width: 992px) {
+  .container-custom {
+    .sidebar {
+      width: 45%;
+    }
+  }
+}
